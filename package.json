@@ -1,0 +1,19 @@
+{
+  "name": "wickedtree",
+  "version": "1.0.0",
+  "description": "wickedtree's homepage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "website",
+    "homepage"
+  ],
+  "author": "wickedtree development",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "webpack": "^4.44.2"
+  }
+}
