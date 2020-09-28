@@ -1,0 +1,111 @@
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/mixins';
+
+
+.subscription-modal {
+    display: block;
+    background-color: rgb(245, 245, 245);
+    overflow: hidden;
+    padding: 10px;
+    width: auto;
+    text-align: center;
+    border-radius: 5px;
+    font-family: calibri;
+    h1 {
+        font-size: 1.5rem;
+        font-weight: normal;
+        margin-bottom: 2px;;
+        margin-top: 0;
+    }
+    .subscribe-desc {
+        display: block;
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    .subscribe-btn {
+        display: inline-block;
+        width: 70%;
+        height: 40px;
+        background-color: transparent;
+        border-radius: 5px;
+        border: 2px solid $color-primary;
+        color: $color-primary;
+        transition: background-color 1s, color 1s;
+        outline: none;
+        &:hover {
+        color: white;
+        background-color: $color-primary;
+        }
+        &:active {
+        background-color: $color-primary * 0.9;
+        border-color: $color-primary * 0.9;
+        transition: background-color 0.1s, border 0.1s;
+        }
+    }
+    .subscribe-err {
+        color: red;
+        font-size: 1rem;
+    }
+    .subscribe-new {
+        display: block;
+        transition: transform 1s ease;
+        label {
+            display: block;
+            cursor: pointer;
+        }
+        .subscribe-new-email {
+            display: inline-block;
+            height: 30px;
+            width: 70%;
+            border: none;
+            text-align: center;
+            border-radius: 5px;
+            transition: box-shadow 0.2s;
+            color: black;
+            &::placeholder {
+            opacity: 0.8;
+            color: gray;
+            transition: opacity 0.3s;
+            }
+            &:focus::placeholder {
+            opacity: 0;
+            }
+            &:hover {
+            box-shadow: 0px 0px 10px 0px rgba(117,117,117,0.2)
+            }
+            &:focus {
+            box-shadow: 0px 0px 10px 0px rgba(117,117,117,0.5);
+            outline: none;
+            }
+        }
+        
+        .subscribe-new-submit {
+            margin-top: 5px;
+        }
+
+        .subscribe-new-or {
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            &::before, &::after {
+                content: "";
+                flex-grow: 1;
+                background: rgba(0, 0, 0, 0.35);
+                height: 1px;
+                font-size: 0px;
+                line-height: 0px;
+                margin: 10px 20px;
+            }
+        }
+
+    }
+
+    .subscribe-choose {
+        svg {
+            width: 2rem;
+            color: black;
+            
+        }
+    }
+
+}

@@ -1,0 +1,1 @@
+window.adsWork = True
