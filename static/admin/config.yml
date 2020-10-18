@@ -1,6 +1,7 @@
 backend:
-  name: git-gateway
+  name: github
   branch: master
+  repo: wickedtree/wickedtree.codes
 
 media_folder: "static/media"
 public_folder: "/media"
